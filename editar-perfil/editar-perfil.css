@@ -261,19 +261,79 @@ a.article:hover {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px; }
   
-  #contraseña {
+  #apellido {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
-  
-  #email {
-    border: none;
-    border-left: solid 2px #ebebeb;
-    border-right: solid 2px #ebebeb; }
 
     .check{
-        display: inline !important;
-        padding-left: 1vh !important;
+        display: inline-block!important;
         align-items: flex-start;
+        margin-right: 1vh !important;
+    }
+
+    .elementos{
+        display: inline-block;
+    }
+
+    .oficios{
+        width: auto !important;
+    }
+
+    option{
+        width: 100%;
+        height: 2vh;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 16px;
+    }
+
+    .nopad {
+        padding-left: 2vh !important;
+        padding-right: 2vh !important;
+        display: inline-block !important;
+        width: auto !important;
+    }
+
+    .disponibilidad{
+    padding: 0 !important;
+    margin-left: 0 !important;
+    }
+
+    /*image gallery*/
+    .image-checkbox {
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 4px solid transparent;
+        margin-bottom: 0;
+        outline: 0;
+    }
+    .image-checkbox input[type="checkbox"] {
+        display: none;
+    }
+    
+    .image-checkbox-checked {
+        border-color: #284B63;
+    }
+    .image-checkbox .fa {
+      position: absolute;
+      color: #284B63;
+      background-color: #fff;
+      padding: 10px;
+      top: 0;
+      right: 0;
+    }
+    .image-checkbox-checked .fa {
+      display: block !important;
+    }
+
+    svg{
+        margin-left: 1vh !important;
+        margin-right: 1vh !important;
+    }
+
+    .calendario{
+        width: 10vh !important;
     }
 
 /* ---------------------------------------------------
