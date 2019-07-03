@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +16,19 @@
     <br><br>
         <div class="container">
             <div class="sign-up-content">
-                <form method="POST" class="signup-form">
+
+            <?php 
+                        if (isset($_SESSION["message"])) {?> 
+                        <div class="alert alert-danger mt-3" role="alert">
+                            <?php echo $_SESSION["message"] ?>
+                        </div>
+                        <?php
+                        }
+                    ?>
+        
+                <form method="POST" action="..\acciones\registrarusuario.php" class="signup-form">
                     <h2 class="form-title">Que tipo de usuario queres crear?</h2>
-                    <div class="form-radio d-flex justify-content-center">
+                    <div class="form-radio ">
                         <input type="radio" name="tipo" value="trabajador" id="trabajador" checked="checked" />
                         <label for="trabajador">TRABAJADOR</label>
 
@@ -34,7 +48,7 @@
 
                     <div class="form-textbox">
                         <label for="contraseña">Contraseña</label>
-                        <input type="contraseña" name="contraseña" id="contraseña" />
+                        <input type="password" name="contraseña" id="contraseña" />
                     </div>
 
                     <div class="form-group">
@@ -48,7 +62,7 @@
                 </form>
 
                 <p class="loginhere">
-                    Ya estas registrado? <a href="../login/login.html" class="loginhere-link"> Inicia sesión</a>
+                    Ya estas registrado? <a href="..\login\login.php" class="loginhere-link"> Inicia sesión</a>
                 </p>
             </div>
         </div>

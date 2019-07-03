@@ -1,0 +1,249 @@
+<?php 
+    session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Editar perfil</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="editar-perfil-cliente.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>ConecTrabajo</h3>
+                <strong>CT</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="..\home\home.php">
+                        <i class="fas fa-home"></i>
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="..\perfil\perfil.php">
+                        <i class="fas fa-id-card"></i>
+                        Perfil
+                    </a>
+                    <a href="..\mensajeria\mensajeria.php">
+                        <i class="fas fa-paper-plane"></i>
+                        Mensajes
+                    </a>
+
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-briefcase"></i>
+                        Ofertas de trabajo
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Por fecha</a>
+                        </li>
+                        <li>
+                            <a href="#">Por rubro</a>
+                        </li>
+                        <li>
+                            <a href="#">Por zona</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar ">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                </div>
+            </nav>
+
+            <h3>Datos personales</h3>
+
+            <br>
+
+            <div class="form-textbox">
+                <label for="nombre">Nombre</label>
+                <input type="textarea" name="nombre" id="nombre" />
+            </div>
+
+            <div class="form-textbox">
+                <label for="apellido">Apellido</label>
+                <input type="textarea" name="apellido" id="apellido" />
+            </div>
+
+            <div class="form-textbox">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" />
+            </div>
+
+            <div class="line"></div>
+
+            <h3>Seleccione barrio de residencia</h3>
+
+            <br>
+
+            <div class="checkbox">
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Agronomía
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Almagro
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Balvanera
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Barracas
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Belgrano
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Boedo
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Caballito
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Chacarita
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Coghlan
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Colegiales
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value="">
+                        Constitución </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Flores
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Floresta
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> La Boca
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Liniers
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Mataderos
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Monte
+                        Castro </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Montserrat
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Pompeya
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Nuñez
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Palermo
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Parque
+                        Avellaneda </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Parque
+                        Chacabuco </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Parque Chas
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Parque
+                        Patricios </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Paternal
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Puerto
+                        Madero </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Pompeya
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Recoleta
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Retiro
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Saavedra
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> San
+                        Cristobal </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> San Nicolás
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> San Telmo
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Velez
+                        Sárfield </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Versalles
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa
+                        Crespo </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa del
+                        Parque </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa
+                        Devoto </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa
+                        General Mitre </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa
+                        Lugano </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa Luro
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa
+                        Ortúzar </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa
+                        Pueyrredon </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa Real
+                    </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa
+                        Riachuelo </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa Santa
+                        Rita </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa
+                        Soldati </label></div>
+                <div class="elementos"><label class="check"><input type="checkbox" class="oficios" value=""> Villa
+                        Urquiza </label></div>
+            </div>
+
+            <div class="line"></div>
+
+            
+
+            <div class="line"></div>
+        </div>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+        </script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+        </script>
+        <script src="editar-perfil-cliente.js"></script>
+</body>
+
+</html>

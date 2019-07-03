@@ -76,12 +76,14 @@ a:focus, a:active {
     line-height: 1.8;
     color: #222;
     background: #284B63;
+    background-color: #284B63;
     font-weight: 600;
-    margin: 0px; }
+    margin: 0px; 
+  }
   
   .main {
-    padding: 150px 0;
-    position: relative; }
+    padding: 150px 0!important;
+    position: relative!important; }
   
   .container {
     width: 520px;
@@ -104,7 +106,9 @@ a:focus, a:active {
     z-index: 99; }
   
   .form-radio {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+}
+    
     .form-radio input {
       width: 0;
       height: 0;
@@ -260,9 +264,6 @@ a:focus, a:active {
     text-decoration: none; }
     .loginhere-link:hover {
       text-decoration: underline; }
-  
-  input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px white inset; }
   
   @media screen and (max-width: 768px) {
     .container {
