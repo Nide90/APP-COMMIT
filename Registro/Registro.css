@@ -1,0 +1,279 @@
+  p {
+    margin-bottom: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h2 {
+    line-height: auto;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #222;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #222;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center  center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-weight: 600;
+    margin: 0px;
+  }
+
+  .main {
+    padding: 150px 0 !important;
+    position: relative !important;
+  }
+
+  .container2 {
+    width: 75vh;
+    background: #D8EFFF;
+    margin: 0 auto;
+    box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+  }
+
+  .container {
+    display: inline-block;
+    width: auto;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+  }
+
+  .col-3 {
+    display: inline-block;
+    margin-left: 9vh;
+  }
+
+  .sign-up-content {
+    padding: 40px 60px 32px 60px;
+    position: relative;
+    z-index: 99;
+  }
+
+  #wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  input {
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 52vh;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 16px 30px 16px 140px;
+    margin-bottom: 2vh;
+    border-radius: 40px;
+    border-style: none !important;
+    border-color: none !important;
+    border-image: none !important;
+  }
+
+  input:-internal-autofill-selected {
+    background-color: none !important;
+    background-image: none !important;
+    color: none !important;
+  }
+
+  input:focus {
+    outline: 0px;
+    background-color: none !important;
+  }
+
+  .form-textbox {
+    position: relative;
+  }
+
+  .form-textbox label {
+    position: absolute;
+    left: 6%;
+    top: 37%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-weight: normal;
+    color: rgba(58, 160, 207, 0.89);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+  }
+
+  .fas {
+    color: rgba(58, 160, 207, 0.89);
+    margin-left: 1vh;
+    font-weight: normal;
+  }
+
+  .IS {
+    width: 25vh;
+    background: #429EA6;
+    color: #FFF;
+    align-self: center;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+
+  .wrapp {
+    display: inline-block !important;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+
+  }
+
+/* ---------------------------------------------------
+    CHECKBOXES y RADIO
+----------------------------------------------------- */
+
+
+  input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+
+  }
+
+  input[type=checkbox].css-checkbox+label.css-label {
+    padding-left: 30px;
+    height: 25px;
+    display: inline-block !important;
+    line-height: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: auto;
+    vertical-align: middle;
+    cursor: pointer;
+
+
+  }
+
+  input[type=checkbox].css-checkbox:checked+label.css-label {
+    background-position: 0 -25px;
+  }
+
+  label.css-label {
+    background-image:url(../imagenes/csscheckbox.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  input[type=radio].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+
+  input[type=radio].css-checkbox+label.css-label {
+    padding-left: 30px;
+    height: 25px;
+    display: inline-block !important;
+    line-height: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: auto;
+    vertical-align: middle;
+    cursor: pointer;
+
+  }
+
+  input[type=radio].css-checkbox:checked+label.css-label {
+    background-position: 0 -25px;
+  }
+
+  .Loginhere {
+    text-align: center;
+    color: #888;
+    margin-top: 63px;
+  }
+
+  .Loginhere-link {
+    color: #1da0f2;
+    text-decoration: none;
+  }
+
+  .Loginhere-link:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      width: calc(100% - 30px);
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .sign-up-content {
+      padding: 40px 20px 32px 20px;
+    }
+
+    .form-radio input+label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .form-textbox label {
+      left: 15px;
+    }
+  }
